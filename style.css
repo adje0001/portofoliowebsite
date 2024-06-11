@@ -1,0 +1,670 @@
+/* Menu*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  padding: 20px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+a:hover {
+  color: #b115bf;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/* Mobilsite */
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lalezar", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+.h4_banner {
+  background-color: black;
+  display: flex;
+}
+h4 {
+  color: white;
+  font-size: 27px;
+  font-family: "Libre Barcode 39 Extended Text", system-ui;
+  font-weight: 500;
+  margin: 3px;
+  text-align: left;
+  padding-block: 10px;
+}
+h2 {
+  color: black;
+  text-align: center;
+  font-family: "Lalezar", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.grid-2_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  background-color: #fbf21a;
+  margin-bottom: 100px;
+}
+
+.selfie {
+  display: grid;
+  margin-top: 75px;
+  margin-left: 25px;
+  width: 120%;
+}
+.formel {
+  margin-right: 30px;
+}
+
+/*Form*/
+input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 0.6rem 0px;
+  box-sizing: border-box;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  background-color: #fbf21a;
+  font-size: 9px;
+}
+label {
+  font-family: "Lalezar", system-ui;
+  font-weight: 200;
+  font-size: 16px;
+}
+/*Knap*/
+.knap {
+  background-color: #b115bf;
+  border: none;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+
+  margin-left: 270px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.knap a {
+  color: white;
+  margin: 40px;
+}
+p {
+  max-width: 65ch;
+  margin: 30px;
+  font-size: 16px;
+  line-height: 34px;
+  text-wrap: pretty;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-wrap: balance;
+  margin-bottom: 70px;
+}
+body {
+  background-color: #fbf21a;
+}
+footer {
+  background-color: #fbf21a;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin-top: 90px;
+}
+footer p {
+  color: #333;
+  text-align: left;
+  font-size: 13px;
+  line-height: 30px;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+}
+footer a {
+  color: #333;
+  font-size: 17px;
+}
+/*Navigationsside*/
+h1 {
+  text-align: center;
+  padding: 55px;
+  font-size: 28px;
+  color: white;
+  font-family: "Lalezar", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.overskrifter {
+  position: absolute;
+  left: 7%;
+  top: 12%;
+}
+h1:hover {
+  box-sizing: border-box;
+  border-bottom: 4px solid white;
+}
+.baggrundsbillede {
+  width: 100%;
+  display: block;
+  height: 800px;
+  object-fit: cover;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+/**********************Banneranimation***************/
+.rul {
+  animation-name: rul_kf;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rul_kf {
+  from {
+    translate: -100% 0;
+  }
+  to {
+    translate: 120% 0;
+  }
+}
+h3 {
+  color: #0b3ff7;
+  text-align: center;
+  font-family: "Lalezar", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  font-size: 25px;
+}
+.a_link {
+  text-align: center;
+  margin-block: 70px;
+  font-size: 15px;
+}
+.grid1-1_links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 254px;
+  margin-top: 100px;
+}
+.grid1-1_links a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lalezar", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+.grid1-1_links a:hover {
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  color: #0b3ff7;
+}
+/****************DESKTOP****************************/
+@media screen and (min-width: 750px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    margin-right: 20px;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+  .menu a {
+    padding: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+    font-size: 30px;
+  }
+
+  a:hover {
+    color: #b115bf;
+  }
+
+  .burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+  .burger {
+    display: none;
+  }
+  @media screen and (max-width: 750px) {
+    .menu {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+    .burger.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 0.2s linear;
+    }
+
+    .burger.active .line:nth-child(2) {
+      opacity: 0;
+      transition: 0.15s linear;
+    }
+
+    .burger.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+      transition: 0.2s linear;
+    }
+
+    nav.active .menu {
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    nav.active .menu li {
+      margin: 10px 20px;
+    }
+
+    nav.active .menu a {
+      font-size: 24px;
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: "Lalezar", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+  }
+  .h4_banner {
+    background-color: black;
+    display: flex;
+  }
+  h4 {
+    color: white;
+    font-size: 90px;
+    font-family: "Libre Barcode 39 Extended Text", system-ui;
+    font-weight: 500;
+    margin: 3px;
+    text-align: left;
+    padding-block: 10px;
+  }
+  h2 {
+    color: black;
+    text-align: center;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    font-size: 60px;
+  }
+  .grid-2_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    background-color: #fbf21a;
+    margin-bottom: 100px;
+  }
+
+  .selfie {
+    display: grid;
+    margin-top: 185px;
+    margin-left: 35px;
+    width: 100%;
+  }
+  .formel {
+    margin-right: 30px;
+  }
+
+  /*Form*/
+  input[type="text"] {
+    width: 100%;
+    padding: 25px 20px;
+    margin: 2rem 0px;
+    box-sizing: border-box;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    background-color: #fbf21a;
+    font-size: 9px;
+  }
+  label {
+    font-family: "Lalezar", system-ui;
+    font-weight: 200;
+    font-size: 36px;
+  }
+  ::placeholder {
+    font-family: "Inter", sans-serif;
+    font-weight: 450;
+    font-size: 35px;
+    color: #000;
+  }
+  /*Knap*/
+  .knap {
+    background-color: #b115bf;
+    border: none;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 70rem;
+    margin-top: -2rem;
+    margin-bottom: 80px;
+  }
+  .knap a {
+    color: white;
+    margin: 80px;
+  }
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fbf21a;
+  }
+  p {
+    max-width: 65ch;
+    font-size: 22px;
+    line-height: 50px;
+    text-wrap: pretty;
+    font-family: "Inter", sans-serif;
+    font-weight: 450;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-wrap: balance;
+    margin-bottom: 70px;
+    margin: 3rem;
+  }
+  .om_mig p {
+    text-align: left;
+    margin-top: 6rem;
+  }
+  body {
+    background-color: #fbf21a;
+  }
+  footer {
+    background-color: #fbf21a;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    margin-top: 90px;
+  }
+  footer p {
+    color: #333;
+    text-align: left;
+    font-size: 50px;
+    line-height: 75px;
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 450;
+    margin-top: 70px;
+  }
+  footer a {
+    color: #333;
+    font-size: 40px;
+    padding: 3rem;
+  }
+  /*Navigationsside*/
+  h1 {
+    text-align: center;
+    padding: 55px;
+    font-size: 38px;
+    color: white;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-block: 3rem;
+  }
+  .overskrifter {
+    position: absolute;
+    left: 35%;
+    top: 12%;
+  }
+  h1:hover {
+    box-sizing: border-box;
+    border-bottom: 4px solid white;
+  }
+  .baggrundsbillede {
+    width: 100%;
+    display: block;
+    height: 800px;
+    object-fit: cover;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  /**********************Banneranimation***************/
+  .rul {
+    animation-name: rul_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes rul_kf {
+    from {
+      translate: -100% 0;
+    }
+    to {
+      translate: 120% 0;
+    }
+  }
+  h3 {
+    color: #0b3ff7;
+    text-align: center;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+    font-size: 37px;
+  }
+  .a_link {
+    text-align: center;
+    margin-block: 70px;
+    font-size: 15px;
+  }
+  .grid1-1_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72rem;
+    margin-top: 100px;
+  }
+  .grid1-1_links a {
+    text-decoration: none;
+    color: black;
+    font-family: "Lalezar", system-ui;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .grid1-1_links a:hover {
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    color: #0b3ff7;
+  }
+
+  /*****************Grid til alle sider**********/
+  .grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 12rem;
+  }
+  .grid_1-1-1 p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .grid_1-1-1 h3 {
+    margin-bottom: 8rem;
+  }
+}

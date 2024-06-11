@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spil</title>
+    <link rel="stylesheet" href="spil.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+    <section id="top">
+        <header>
+            <div class="logo">
+                <a href="index.html">Adam.</a>
+            </div>
+
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="navigation.html">Navigation</a>
+                        <a href="index.html#om_mig_link">Om mig</a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <div id="screen">
+        <div id="game">
+            <div id="game_background"></div>
+            <div id="game_elements">
+                <div id="red_container1">
+                    <div id="red_sprite1"></div>
+                </div>
+                <div id="red_container2">
+                    <div id="red_sprite2"></div>
+                </div>
+                <div id="red_container3">
+                    <div id="red_sprite3"></div>
+                </div>
+                <div id="blue_container1">
+                    <div id="blue_sprite1"></div>
+                </div>
+                <div id="blue_container2">
+                    <div id="blue_sprite2"></div>
+                </div>
+                <div id="blue_container3">
+                    <div id="blue_sprite3"></div>
+                </div>
+                <div id="box1"></div>
+                <div id="box2"></div>
+                <div id="box3"></div>
+                <div id="box4"></div>
+                <div id="box5"></div>
+                <div id="box6"></div>
+            </div>
+            <div id="game_ui">
+                <div id="score_board"></div>
+                <div id="life_board">
+                    <img src="spilbilleder/heart.svg" alt="hjerte" />
+                    <div id="liv">3</div>
+                </div>
+                <div id="time_board">
+                    <div id="time_container">
+                        <div id="time_sprite"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="start">
+            <div id="start_knap">
+                <div class="spiltekst">Spil</div>
+            </div>
+
+        </div>
+        <div id="game_over">
+            <div id="genstart1">
+                <button class="knap1">
+                    <a href="navigation.html">Website</a>
+                </button>
+            </div>
+        </div>
+        <div id="level_complete">
+            <button class="knap1">
+                <a href="navigation.html">Website</a>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="mailto:adje0001@stud.kea.dk">Adje0001@stud.kea.dk</a>
+            <br><br>
+            <a href="mailto:adamchr2001@hotmail.com">adamchr2001@hotmail.com</a>
+        </div>
+        <div class="top_link_footer">
+            <a href="#top">Tilbage til toppen</a>
+        </div>
+    </footer>
+    <script src="java.js"></script>
+    <script src="spil.js"></script>
+</body>
+
+</html>
